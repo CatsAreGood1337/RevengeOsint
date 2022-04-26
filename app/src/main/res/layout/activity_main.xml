@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/CardView.Light"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onPhone"
+        android:text="Пробив по номеру"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onEmail"
+        android:text="Пробив по почте"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toTopOf="@+id/face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <Button
+        android:id="@+id/face"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onFace"
+        android:text="Поиск по лицу"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toTopOf="@+id/car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/car"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onCar"
+        android:text="Пробив по номеру машины"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toTopOf="@+id/ip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/face" />
+
+    <Button
+        android:id="@+id/ip"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onIP"
+        android:text="Пробив по IP"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toTopOf="@+id/bots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car" />
+
+    <Button
+        android:id="@+id/bots"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onBots"
+        android:text="Полезные телеграмм боты"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip" />
+
+    <Button
+        android:id="@+id/nacrutka"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onNacrutka"
+        android:text="Сервисы для накрутки"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toTopOf="@+id/vk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="onCard"
+        android:text="Пробив по номеру карты"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBaseline_toBaselineOf="@+id/vk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/vk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="onVk"
+        android:text="Пробив по социальным сетям"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toTopOf="@+id/Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nacrutka" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="226dp"
+        android:onClick="onTelegram"
+        android:text="Телеграм канал"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#95A0AA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
